@@ -1,0 +1,8 @@
+############################################
+## TRACE and TRACK HTTP methods disabled to prevent XSS attacks
+
+    RewriteEngine on
+    RewriteCond %{HTTP_HOST} ^stern-x.com [NC]
+    RewriteRule ^(.*)$ https://www.stern-x.com/$1 [L,R=301,NC]
+
+###########################################

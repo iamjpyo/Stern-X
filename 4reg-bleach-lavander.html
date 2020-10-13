@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en"> 
+  <head>
+    <title>Product</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>     
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+
+    <link type="text/css" rel="stylesheet" href="css/lightslider.min.css" />        
+
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+        </div>
+      </div>
+    </div>
+    <div class="page">
+      <!-- Page Header-->
+      <header class="section page-header">
+        <!-- RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!-- RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!-- RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!-- RD Navbar Brand-->
+                  <div class="rd-navbar-brand"><a href="index.html"><img class="brand-logo-light" src="images/logo.png" alt="" width="140" height="57" srcset="images/logo.png 2x"/></a></div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <!-- RD Navbar Nav-->
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="index.html">Home</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="all-products.html">Products</a></li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                  </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div style="width: 100%; height: 10px; background-color: #9de8ec; margin-top: 10px;"></div>
+
+
+
+      <!-- Products -->
+      <section class="section section-lg">
+        <div class="container">
+          <div class="row row-30 text-center">
+    
+            <div class="col-sm-12 col-md-6">
+              <ul id="imageGallery">
+                <li data-thumb="images/gallery/all-products/prod4/thumb/1.jpg">
+                  <img src="images/gallery/all-products/prod4/1.jpg" />
+                </li>
+                <li data-thumb="images/gallery/all-products/prod4/thumb/2.jpg">
+                  <img src="images/gallery/all-products/prod4/2.jpg" />
+                </li>
+                <li data-thumb="images/gallery/all-products/prod4/thumb/3.jpg">
+                  <img src="images/gallery/all-products/prod4/3.jpg" />
+                </li>
+                <li data-thumb="images/gallery/all-products/prod4/thumb/4.jpg">
+                  <img src="images/gallery/all-products/prod4/4.jpg" />
+                </li>
+              </ul>
+            </div>
+          
+
+
+            <!--RIGHT SIDE-->
+            <div class="col-sm-12 col-md-6">
+              <div class="block-bordered-left">
+                  <h4 style="font-weight: bold;">Regular Strength BLEACH - Lavander</h4>
+                  <p id="product-info" class="text-justify">
+                    Kills everyday bacteria on your laundry
+                    Kills everyday bacteria on household surfaces
+                    And helps fight mold and mildew as it disinfects
+                  </p>
+                  <div id="find-store" style="margin-top: 50px;" class="product-featured-button"><a class="button button-primary" href="product.html">find store</a></div>
+              </div>
+            </div>
+            
+            <hr style="width: 80%; margin: 20px auto;">
+
+          </div>
+        </div>
+      </section>
+
+
+      <!--STORES-->
+      <div class="container">
+
+        <div class="row">
+          <h4 class="col-12"><b>Find your store</b></h4>
+          <div id="mapid" class="col-sm-12 col-md-12 col-lg-7" style="height: 450px;"></div>
+
+
+          <div id="stores" class="col-sm-6 col-lg-5 list-group">
+            <a target="_blank" href="https://goo.gl/maps/LxgJK8fNF87Gujaj6" class="list-group-item list-group-item-action">
+              <img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png">
+              <p>3949 SW 8TH ST, MIAMI, FL 33134</p>
+            </a>
+            <a target="_blank" href="https://goo.gl/maps/Bx89y56cqBrhHahg6" class="list-group-item list-group-item-action">
+              <img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png"><br>
+              <p>366 EAST 4TH AVE, HIALEAH, FL 33010</p>
+            </a>
+            <a target="_blank" href="https://goo.gl/maps/4ZMBDu5sLyRsBeG38" class="list-group-item list-group-item-action">
+              <img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png">
+              <p>8740 BIRD ROAD, MIAMI, FL 33165</p>
+            </a>
+            <a target="_blank" href="https://goo.gl/maps/6BRjeMMtwzJdxWzM8" class="list-group-item list-group-item-action">
+              <img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png"><br>
+              <p>5252 WEST FLAGLER ST, MIAMI, FL 33134</p>
+            </a>
+            <a target="_blank" href="https://goo.gl/maps/SwZQNqUW32F1Z6L17" class="list-group-item list-group-item-action">
+              <img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png"><br>
+              <p>16801 NW 67TH AVE, MIAMI, FL 33015</p>
+            </a>
+            <a target="_blank" href="https://goo.gl/maps/YJyhumDn3JC2Bgyp8" class="list-group-item list-group-item-action">
+              <img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png"><br>
+              <p>3141 W 76TH ST, SUITE 5, HIALEAH, FL 33018</p>
+            </a>
+            <a target="_blank" href="https://goo.gl/maps/t2ei9UbqdzpYz1sc9" class="list-group-item list-group-item-action">
+              <img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png"><br>
+              <p>775 W 49TH ST, SUITE 1, HIALEAH, FL 33012</p>
+            </a>
+            <a target="_blank" href="https://goo.gl/maps/Hbi2rdnrML4LZN2t6" class="list-group-item list-group-item-action">
+              <img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png"><br>
+              <p>4410 W 16TH AVE, HIALEAH, FL 33012</p>
+            </a>
+            <a target="_blank" href="https://goo.gl/maps/sXeXJuDewuMHgEtC6" class="list-group-item list-group-item-action">
+              <img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png"><br>
+              <p>11865 SW 26TH ST, MIAMI, FL 33175</p>
+            </a>
+          </div>
+        </div>
+        
+      </div>
+
+    
+
+      <!-- Page Footer-->
+      <footer class="section footer-minimal">
+        <div class="container wow-outer">
+          <div class="wow fadeIn">
+            <div class="row row-30">
+              <div class="col-12"><a href="index.html"><img src="images/logo.png" alt="" width="140" height="57" srcset="images/logo-280x113.png"/></a></div>
+              <div class="col-12">
+                <ul class="footer-minimal-nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="all-products.html">Products</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-12">
+                <ul class="social-list">
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="#"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="https://instagram.com/stern_xproducts"></a></li>
+                  <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-twitter" href="#"></a></li>
+                </ul>
+              </div>
+            </div>
+            <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Stern-X</span><span>.&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span></a></p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    
+
+    <script type="text/javascript" src="js/core.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/lightslider.min.js"></script>
+
+    <script type="text/javascript">
+
+      var cities = L.layerGroup();
+
+      L.marker([25.765131, -80.260274]).bindPopup('<a target="_blank" href="https://goo.gl/maps/LxgJK8fNF87Gujaj6"><img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png" alt="Navarro"></a>').addTo(cities),
+      L.marker([25.825420, -80.274001]).bindPopup('<a target="_blank" href="https://goo.gl/maps/Bx89y56cqBrhHahg6"><img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png" alt="Navarro"></a>').addTo(cities);
+      L.marker([25.732573, -80.336966]).bindPopup('<a target="_blank" href="https://goo.gl/maps/4ZMBDu5sLyRsBeG38"><img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png" alt="Navarro"></a>').addTo(cities);
+      L.marker([25.770903, -80.281627]).bindPopup('<a target="_blank" href="https://goo.gl/maps/6BRjeMMtwzJdxWzM8"><img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png" alt="Navarro"></a>').addTo(cities);
+
+      L.marker([25.926467, -80.307852]).bindPopup('<a target="_blank" href="https://goo.gl/maps/SwZQNqUW32F1Z6L17"><img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png" alt="Navarro"></a>').addTo(cities);
+      L.marker([25.892354, -80.346784]).bindPopup('<a target="_blank" href="https://goo.gl/maps/YJyhumDn3JC2Bgyp8"><img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png" alt="Navarro"></a>').addTo(cities);
+      L.marker([25.867433, -80.297817]).bindPopup('<a target="_blank" href="https://goo.gl/maps/t2ei9UbqdzpYz1sc9"><img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png" alt="Navarro"></a>').addTo(cities);
+      L.marker([25.861711, -80.316140]).bindPopup('<a target="_blank" href="https://goo.gl/maps/Hbi2rdnrML4LZN2t6"><img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png" alt="Navarro"></a>').addTo(cities);
+      L.marker([25.747035, -80.390779]).bindPopup('<a target="_blank" href="https://goo.gl/maps/sXeXJuDewuMHgEtC6"><img src="https://www.grocery.com/wp-content/uploads/2014/03/navarro2.png" alt="Navarro"></a>').addTo(cities);
+
+      var mymap = L.map('mapid', {layers: [cities]}).setView([25.7825453,-80.2994983], 13);
+
+      L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+        maxZoom: 11,
+        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+          '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+          'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1
+      }).addTo(mymap);
+
+      var overlays = {
+        "Cities": cities
+      };
+
+      L.control.layers(overlays).addTo(mymap);
+
+      $(document).ready(function() {
+        $("#imageGallery").lightSlider({
+          gallery: true,
+          item: 1,
+          loop: true,
+          slideMargin: 0,
+          thumbItem: 4,
+
+          keyPress: true,
+          controls: true,
+        }); 
+      });
+    </script>
+   
+
+  </body>
+</html>
